@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Guessing Game</h1>
+      <p>Guess a number between <span id="lowest">1</span> and <span id="highest">100</span></p>
+      <input type="number" id="guess">
+      <br>
+      <button id="submit-guess" onclick="checkGuess()">Submit Guess</button>
+      <button id="restart" onclick="restart()">Restart</button>
+      <p id="feedback"></p>
+    </div>
+    <div class="settings">
+      <h2>Settings</h2>
+      <p>Set number range:</p>
+      <input type="number" id="lowest-input" placeholder="Lowest...">
+      <input type="number" id="highest-input" placeholder="Highest...">
+      <br>
+      <button id="save-button" onclick="saveHighLow()">Save</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
